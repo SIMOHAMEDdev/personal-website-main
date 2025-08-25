@@ -1,0 +1,118 @@
+:root {
+  --speed: 500ms;
+}
+.menu {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .logo1 {
+    height: 6pc;
+    border-radius: 50%;
+  }
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu__item {
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  
+  .menu__toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu__toggle span {
+    display: block;
+    width: 45px;
+    height: 7px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu__list--open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 6pc;
+    left: 0;
+    right: 0; */
+    background-color: rgba(255, 255, 255, 0.955);
+    text-align: center;
+    z-index: 1;
+    padding: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    transition: var(--speed) ease;
+    /* opacity: 50%; */
+    /* visibility: visible; */
+    /* transform: translateY(0); */
+  }
+  .social1 {
+    margin-left: 1.3pc;
+  }
+  .social-icon1 {
+    color: black;
+    font-size: 2.2pc;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .hide {
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+}
+  /* .menu__list, .logo1, .social1 {
+    display: none;
+  } */
+  @media screen and (max-width: 700px) {
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu__item {
+      margin: 10px 0;
+    }
+  
+    .menu__toggle {
+      display: block;
+    }
+  }
+    /* @media only screen and (max-width: 458px) {
+      .menu__toggle {
+        position: relative;
+        right: 3.5pc;
+      }
+  } */
+
+  @keyframes down {
+    from {
+      height: 10%;   
+    }
+    to {
+      height: 100%;
+    }
+  }
+  .down {
+    animation-name: down;
+    transition: 0.10s;
+  }
