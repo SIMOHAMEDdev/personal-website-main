@@ -18,11 +18,6 @@
   position: relative;
   pointer-events: none;
 }
-.pricing-container {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
 
 
 .projects_animations::before,
@@ -217,28 +212,7 @@ ul {
   }
 }
 
-@media only screen and (max-width: 860px){
-  .sides {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
 
-  .skills {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .skill-icon {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-  .pricing-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 @media only screen and (max-width: 435px){
   .project {
@@ -713,4 +687,34 @@ footer {
 
 .social-icon {
   color: white;
+}
+
+.pricing-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 860px){
+  .sides {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skill-icon {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .pricing-container {
+    /* display: flex; */
+    flex-direction: column;
+  }
 }
