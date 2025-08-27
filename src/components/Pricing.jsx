@@ -22,7 +22,7 @@ function Pricing() {
           Here you will find the pricing plans and you can choose what works for you best!
           </p>
         </div>
-          <div className='container' style={{ display: "flex", flexDirection:"row", gap: "30px"}}>
+          <div className='container pricing-container'>
             <div className="starter" style={{border: "2px solid #fff", padding: "20px", borderRadius: "30px"}}>
                 <BsDiamond style={{backgroundColor: "#fff", padding: "10px", borderRadius: "50%", fontSize: "25px"}}/>
                 <h3>Starter</h3>
